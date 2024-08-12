@@ -1,0 +1,152 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #000428, #004e92);
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.control-container {
+    margin-bottom: 20px;
+}
+
+#play-button, #settings-button {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00f0ff;
+    color: #222;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+#play-button:hover, #settings-button:hover {
+    background-color: #00bfff;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+#lyrics-input, #music-link {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #00f0ff;
+    border-radius: 5px;
+    background-color: #222;
+    color: #00f0ff;
+    margin-bottom: 10px;
+}
+
+#falling-words {
+    position: relative;
+    height: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 2px solid #00f0ff;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.word {
+    position: absolute;
+    font-size: 24px;
+    white-space: nowrap;
+    color: #00f0ff;
+    transition: all 0.1s ease-in-out;
+}
+
+#typing-input {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid #00f0ff;
+    border-radius: 5px;
+    outline: none;
+    background-color: #222;
+    color: #00f0ff;
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #222;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    color: #00f0ff;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Background Options */
+.bg-1 {
+    background: linear-gradient(to right, #000428, #004e92);
+}
+
+.bg-2 {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.bg-3 {
+    background: #000000;
+}
+
+.bg-4 {
+    background: #ffffff;
+}
+

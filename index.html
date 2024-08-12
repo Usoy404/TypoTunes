@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypoTunes: Falling Lyrics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>TypoTunes: Falling Lyrics</h1>
+        
+        <!-- Game Controls -->
+        <div class="control-container">
+            <button id="play-button">Play</button>
+            <button id="settings-button">Settings</button>
+        </div>
+
+        <!-- Inputs for Lyrics and Music -->
+        <div class="input-container">
+            <textarea id="lyrics-input" placeholder="Paste your lyrics here..."></textarea>
+            <input type="text" id="music-link" placeholder="Enter music link... (e.g., .mp3 file)">
+        </div>
+        
+        <!-- The Falling Words Game Area -->
+        <div id="falling-words"></div>
+        
+        <!-- Typing Input and Score -->
+        <input type="text" id="typing-input" placeholder="Type the falling words..." autofocus>
+        <div id="score">Score: 0</div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Settings</h2>
+            <label for="font-select">Choose Font:</label>
+            <select id="font-select">
+                <option value="Roboto">Roboto</option>
+                <option value="Arial">Arial</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Times New Roman">Times New Roman</option>
+            </select>
+            <br><br>
+            <label for="background-select">Choose Background:</label>
+            <select id="background-select">
+                <option value="bg-1">Gradient Blue</option>
+                <option value="bg-2">Gradient Purple</option>
+                <option value="bg-3">Solid Black</option>
+                <option value="bg-4">Solid White</option>
+            </select>
+            <br><br>
+            <button id="apply-settings">Apply Settings</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
